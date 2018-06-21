@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+
+body{
+	font: 400 12px/1.2 "Montserrat", sans-serif;
+	color: #9EABAD;
+	background: #52575A url("../img/bg.jpg") no-repeat 100% 0 / cover;
+
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+	padding-top: 35px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	border: 1px solid #B3C1C3;
+	background-color: #fffff;
+	border-radius: 0;
+	font: 600 13px/1 Montserrat, sans-serif;
+	padding: 12px 9px;
+	color: #788487;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+	border-color: #7ECBDC;
+	outline: 0;
+
+}
+textarea {
+
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	    appearance: none;
+	 	padding-right: 30px;
+	 	background: #fff url("../img/Shape.svg") no-repeat 90% 50%;
+}
+
+.ba-payment-form {
+	background: #f4f4f4;
+	max-width: 336px;
+	margin: 0 auto;
+}
+
+.ba-payment-form__header {
+	padding: 19px 24px;
+	background: #EBE1A7;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.ba-payment-form__client {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 700;
+	color: #5F706C;
+
+}
+
+.ba-payment-form__total-label {
+	margin: 0;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #BBB694;
+	letter-spacing: -0.075em;
+}
+
+.ba-payment-form__price {
+	font-size: 36px;
+	font-weight: 600;
+	color: #5F706C;
+	letter-spacing: -0.05em;
+	line-height: 1;
+}
+
+.ba-payment-form__date {
+	display: flex;
+}
+
+.ba-payment-form__date [name="month"] {
+	flex-grow: 1;
+}
+
+.ba-payment-form__date [name="year"] {
+	margin-left: 16px;
+	flex-basis: 96px;
+}
+
+.ba-payment-form__cvv {
+	display: flex;
+	align-items: center;
+}
+
+.ba-payment-form__cvv [name="cvv"] {
+	flex-basis: 96px;
+	margin-top: 9px;
+}
+
+.ba-payment-form__body {
+	padding: 20px 24px;
+}
+
+.ba-payment-form label {
+	display: block;
+}
+
+.ba-form-row + .ba-form-row {
+	margin-top: 25px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment Form</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+	<div class="ba-container">
+		<form action="#" method="post" class="ba-payment-form">
+			<header class="ba-payment-form__header">
+				<div class="ba-payment-form__total">
+					<p class="ba-payment-form__client">
+						Harold Finch
+					</p>
+					<p class="ba-payment-form__total-label">
+						Your Total
+					</p>
+				</div>
+				<div class="ba-payment-form__price">$88</div>
+			</header>
+			<div class="ba-payment-form__body">
+				<div class="ba-form-row">
+					<label>Credit card number</label>
+					<input type="number" name="card-number" required placeholder="4321 4321 4321 4321 4321" max="9999999999999999">
+				</div>
+
+				<div class="ba-form-row">
+					<label>Expiration date</label>
+					<div class="ba-payment-form__date">
+						<select id="month" name="month">
+							<option value="" selected="month">Month</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+						<select name="year">
+							<option selected="year">Year</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+							<option value="2020">2020</option>
+
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="ba-form-row">
+				<label for="ba-cvv">CVV</label>
+				<div class="ba-payment-form__cvv">
+					<input id="ba-cvv" type="password" name="cvv" required maxlength="4">
+					<span>
+						3 or 4 digits - <a href="#">view example</a>
+					</span>
+				</div>
+			</div>
+			<div class="ba-form-row">
+				<button type="submit">Pay</button>
+				<a href="#">Cancel order</a>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
